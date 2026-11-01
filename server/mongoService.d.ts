@@ -1,0 +1,25 @@
+export function getCurrentMongoUri(): string;
+export function isMongoReady(): boolean;
+export function initMongo(customUri?: string): Promise<boolean>;
+export function saveMongoUri(uri: string): Promise<boolean>;
+export function seedMongoIfEmpty(): Promise<void>;
+export function getStoriesFromMongo(): Promise<any[]>;
+export function getStoryByIdFromMongo(id: string): Promise<any>;
+export function saveStoryToMongo(story: any): Promise<any>;
+export function deleteStoryFromMongo(storyId: string): Promise<boolean>;
+export function getChaptersForStoryFromMongo(storyId: string): Promise<any[]>;
+export function getChapterByIdFromMongo(id: string): Promise<any>;
+export function getChapterByIndexFromMongo(storyId: string, chapterIndex: number): Promise<any>;
+export function getSourceChapterFromMongo(storyId: string, chapterIndex: number): Promise<any>;
+export function cacheSourceChapterInMongo(chapter: any): Promise<void>;
+export function getWikiChapterFromMongo(storyId: string, chapterIndex: number): Promise<any>;
+export function cacheWikiChapterInMongo(chapter: any): Promise<void>;
+export function saveChapterToMongo(chapter: any): Promise<any>;
+export function saveChaptersBatchToMongo(chapters: any[]): Promise<number>;
+export function getMongoStatus(): Promise<{
+  connected: boolean;
+  uriConfigured: boolean;
+  databaseName: string | null;
+  storiesCount: number;
+  chaptersCount: number;
+}>;

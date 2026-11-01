@@ -1,0 +1,56 @@
+[
+  {
+    "index": 1,
+    "source": "metruyenchu",
+    "sourceChapterIndex": 1,
+    "characters": 7907
+  },
+  {
+    "index": 100,
+    "source": "metruyenchu",
+    "sourceChapterIndex": 100,
+    "characters": 8837
+  },
+  {
+    "index": 101,
+    "source": "metruyenchu",
+    "sourceChapterIndex": 102,
+    "characters": 9889
+  },
+  {
+    "index": 514,
+    "source": "metruyenchu",
+    "sourceChapterIndex": 515,
+    "characters": 11967
+  },
+  {
+    "index": 515,
+    "source": "metruyenchu",
+    "sourceChapterIndex": 516,
+    "characters": 12062
+  },
+  {
+    "index": 652,
+    "source": "metruyenchu",
+    "sourceChapterIndex": 653,
+    "characters": 12170
+  },
+  {
+    "index": 653,
+    "source": "archive",
+    "characters": 12136,
+    "reason": "empty"
+  },
+  {
+    "index": 654,
+    "source": "archive",
+    "characters": 11870,
+    "reason": "not-listed"
+  },
+  {
+    "index": 722,
+    "source": "archive",
+    "characters": 10828,
+    "reason": "not-listed"
+  }
+]

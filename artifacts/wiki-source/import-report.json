@@ -1,0 +1,15 @@
+{
+  "sourceVersion": "wikicv-2026-10-15",
+  "total": 1232,
+  "done": 47,
+  "imported": 0,
+  "cached": 47,
+  "errors": [],
+  "startedAt": "2026-10-14T18:35:11.975Z",
+  "lastChapter": "bach-the-cau-tien:43",
+  "updatedAt": "2026-10-14T18:35:13.489Z",
+  "blocked": {
+    "chapter": "bach-the-cau-tien:44",
+    "reason": "WikiCV refused access. Import stopped; no further requests are sent."
+  }
+}

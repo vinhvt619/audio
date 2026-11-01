@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Be Vietnam Pro', system-ui, sans-serif;
+  color-scheme: light dark;
+  --audio-player-height: 0px;
+}
+
+.player-clearance {
+  padding-bottom: calc(var(--audio-player-height) + 2rem);
+}
+
+.audio-player-surface {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.audio-player-playback > button,
+.audio-player-tools > div > button,
+.audio-player-tools > button {
+  min-width: 44px;
+  min-height: 44px;
+  flex-shrink: 0;
+  justify-content: center;
+}
+
+.reader-content article {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 1023px) {
+  .audio-player-popover {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: calc(var(--audio-player-height) + 8px);
+    width: auto;
+    max-height: min(55dvh, calc(100dvh - var(--audio-player-height) - 80px));
+    overflow-y: auto;
+    margin-bottom: 0;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.7);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideRight {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-right {
+  animation: slideRight 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Range input styling for audio progress & volume */
+input[type="range"] {
+  accent-color: #6366f1;
+}
+
+/* Smooth reading text selection */
+::selection {
+  background: #a5b4fc;
+  color: #1e1b4b;
+}

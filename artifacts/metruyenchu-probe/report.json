@@ -1,0 +1,31 @@
+{
+  "source": "https://metruyenchu.com.vn/muon-doi-cau-tien",
+  "listedChapters": 654,
+  "samples": [
+    {
+      "index": 1,
+      "title": "Muôn Đời Cầu Tiên - Chương 1: Bách Thế Bia",
+      "characters": 8236,
+      "paragraphs": 103,
+      "hasEnding": true,
+      "replacementCharacters": 0
+    },
+    {
+      "index": 515,
+      "title": "Muôn Đời Cầu Tiên - Chương 515: sao trời chỗ sâu trong",
+      "characters": 12272,
+      "paragraphs": 91,
+      "hasEnding": true,
+      "replacementCharacters": 0
+    },
+    {
+      "index": 654,
+      "title": "Muôn Đời Cầu Tiên - Chương 654: 5000 năm",
+      "characters": 0,
+      "paragraphs": 0,
+      "hasEnding": false,
+      "replacementCharacters": 0
+    }
+  ],
+  "productionChanged": false
+}

@@ -1,0 +1,16 @@
+node_modules
+dist
+.git
+.env
+.env.*
+!.env.example
+.vercel
+backups
+*.log
+PLAN_FOR_GEMINI.md
+scripts
+tests
+deployment-proof.jpg
+DEPLOYMENT.md
+MOBILE_FIX.md
+artifacts
